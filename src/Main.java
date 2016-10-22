@@ -11,6 +11,7 @@ public class Main {
 			System.out.println("x is neither 0 nor 1");
 		}
 		
+		
 		int n = 0;
 		while(n < 5) {
 			n = n + 1;
@@ -24,6 +25,22 @@ public class Main {
 		System.out.println(factorial2(5));
 		System.out.println(factorialRecursive(5));
 		System.out.println(factorial3(6));
+		System.out.println(listExample());
+	}
+	
+	public static String listExample() {
+		String [] elements = {"H", "He", "Li", "Be", "B", "C", "N", "O"};
+		String blob = "";
+		for(int i = 0; i < elements.length; i++) {
+			if (i == 0) {
+				blob = blob + elements[i];
+			} else {
+				blob = blob +  "\n" + elements[i];
+			}
+			
+		
+		}
+		return blob;
 	}
 
 	public static void ourprint(String msg) {
