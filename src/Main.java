@@ -10,11 +10,17 @@ public class Main {
 		} else {
 			System.out.println("x is neither 0 nor 1");
 		}
-		ourprint("hello world");
-		ourprint("hello Sachin");
-		System.out.println(cube(2));
+		
+		int n = 0;
+		while(n < 5) {
+			n = n + 1;
+			System.out.println(n);
+		}
+		
+		System.out.println(square(2));
 		System.out.println(max(2, 1));
 		System.out.println(min(10, 6));
+		System.out.println(factorial(4));
 	}
 
 	public static void ourprint(String msg) {
@@ -22,9 +28,9 @@ public class Main {
 		System.out.println(msg);
 	}
 
-	public static double cube(double x) {
+	public static double square(double x) {
 		// return x * x;
-		return Math.pow(x, 3);
+		return Math.pow(x, 2);
 	}
 
 	public static double max(double a, double b) {
@@ -42,4 +48,14 @@ public class Main {
 			return b;
 		}
 	}
+	
+	public static int factorial(int n) {
+		int total = 1;
+		while (n > 1) {
+			total = total * n;
+			n = n - 1;
+		}
+		return total;
+	}
+	
 }
