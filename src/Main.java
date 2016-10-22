@@ -20,7 +20,10 @@ public class Main {
 		System.out.println(square(2));
 		System.out.println(max(2, 1));
 		System.out.println(min(10, 6));
-		System.out.println(factorial(4));
+		System.out.println(factorial(5));
+		System.out.println(factorial2(5));
+		System.out.println(factorialRecursive(5));
+		System.out.println(factorial3(6));
 	}
 
 	public static void ourprint(String msg) {
@@ -58,4 +61,28 @@ public class Main {
 		return total;
 	}
 	
+	public static int factorial2(int n) {
+		int total = 1;
+		int k = 1;
+		while (k <= n) {
+			total = total * k;
+			k++;
+		}
+		return total;
+	}
+	
+	public static int factorialRecursive(int n) {
+		if (n < 1) {
+			return 1;
+		}
+		return n * factorialRecursive(n - 1);
+	}
+	
+	public static int factorial3(int n) {
+		int total = 1;
+		for (int k = 1; k <= n; k++) {
+			total  *= k;
+		}
+		return total;
+	}
 }
