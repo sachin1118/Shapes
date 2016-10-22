@@ -31,11 +31,24 @@ public class Main {
 		System.out.println(msg);
 	}
 
+	/**
+	 * Computes the square of x
+	 * @param x
+	 * @return
+	 */
+	
 	public static double square(double x) {
 		// return x * x;
 		return Math.pow(x, 2);
 	}
 
+	/**
+	 * Returns the larger number from a and b
+	 * @param a
+	 * @param b
+	 * @return
+	 */
+	
 	public static double max(double a, double b) {
 		if (a > b) {
 			return a;
@@ -44,6 +57,13 @@ public class Main {
 		}
 	}
 	
+	/**
+	 * Returns the smaller number from a and b
+	 * @param a
+	 * @param b
+	 * @return
+	 */
+	
 	public static double min(double a, double b) {
 		if (a < b) {
 			return a;
@@ -51,6 +71,12 @@ public class Main {
 			return b;
 		}
 	}
+	
+	/**
+	 * Computes the factorial of n (n * (n - 1) *  (n - 2)... * 1)
+	 * @param n
+	 * @return
+	 */
 	
 	public static int factorial(int n) {
 		int total = 1;
@@ -61,6 +87,12 @@ public class Main {
 		return total;
 	}
 	
+	/**
+	 * Computes factorial of n (1 * 2 * 3... * n)
+	 * @param n
+	 * @return
+	 */
+	
 	public static int factorial2(int n) {
 		int total = 1;
 		int k = 1;
@@ -70,6 +102,13 @@ public class Main {
 		}
 		return total;
 	}
+	
+	/**
+	 * Computes the factorial of n using a recursive function
+	 * @param n
+	 * @return
+	 */
+	
 	
 	public static int factorialRecursive(int n) {
 		if (n < 1) {
